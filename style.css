@@ -36,3 +36,15 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    .categorylist{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+
+    .categorylist a{
+        text-decoration: none;
+        background-color: gray;
+        padding: 2em;
+    }
