@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #272727;
+     }
+
+     h1, p, a, li{
+        color: white;
+        
+     }
+     p{
+        margin-bottom: 1.563rem;
+     }
+     li{
+        list-style-position: inside;
+     }
+
+     h1{
+        font-size: 10rem;
+     }
+
+     .mainNav h1 span {
+        display: inline-block;
+        transform: scaleX(-1) translateX(-0.2rem);
+        color: red;
+     }
+     body{
+        margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+        font-weight: 400;
+    line-height: 1.563;
+     }
+
+.mainNav{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
