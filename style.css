@@ -30,6 +30,12 @@
         font-weight: 400;
     line-height: 1.563;
      }
+     h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 1rem;
+      margin-top: 1em;
+      font-weight: bold;
+      color: white;
+     }
 
 .mainNav{
     display: flex;
@@ -41,12 +47,24 @@
       display: flex;
         align-items: center;
         justify-content: space-between;
+        color: white;
     }
-
+.mainNavcategory h2{
+   font-size: 2.441rem;
+   letter-spacing: -0.12rem;
+   line-height: 1.2;
+   color: white;
+}
+.mainNavcategory h1{
+   font-size: 3.052rem;
+}
     .mainNavcategory h1 span {
       display: inline-block;
       transform: scaleX(-1) translateX(-0.2rem);
       color: red;
+   }
+   .mainNavcategory a{
+      text-decoration: none;
    }
 
     .categorylist{
