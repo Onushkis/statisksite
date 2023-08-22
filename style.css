@@ -45,6 +45,7 @@
 
     .categorylist a{
         text-decoration: none;
-        background-color: gray;
+        background-color:#949394;
         padding: 2em;
+        color: white;
     }
