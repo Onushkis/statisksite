@@ -37,6 +37,18 @@
         justify-content: space-between;
     }
 
+    .mainNavcategory{
+      display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mainNavcategory h1 span {
+      display: inline-block;
+      transform: scaleX(-1) translateX(-0.2rem);
+      color: red;
+   }
+
     .categorylist{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
