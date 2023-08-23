@@ -152,5 +152,21 @@
          }
 
         
+                            /* ---------------------------Single Produkt*/
 
-        
+         .produkt_main{
+            display: grid;
+         }
+
+        .produkt_info{
+color: white;
+padding: 1rem;
+         }
+
+
+         dd{
+            margin-left: 1rem;
+         }
+         dt{
+            font-weight: 700;
+         }
