@@ -157,6 +157,9 @@
          .produkt_main{
             display: grid;
          }
+         .produkt_main img{
+            width: 30%;
+         }
 
         .produkt_info{
 color: white;
