@@ -1,176 +1,177 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #272727;
-     }
-
-     h1, p, a, li{
-        color: white;
-        
-     }
-     p{
-        margin-bottom: 1.563rem;
-     }
-     li{
-        list-style-position: inside;
-     }
-
-     h1{
-        font-size: 10rem;
-     }
-
-     body{
-        margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
-        font-weight: 400;
-        line-height: 1.563;
-      }
-      h1, h2, h3, h4, h5, h6 {
-         margin-bottom: 1rem;
-         margin-top: 1em;
-         font-weight: bold;
-         color: white;
-      }
-      /* ----------------------------------------------Main Nav + span (red R) */
-      
-      
-      .mainNav h1 span {
-         display: inline-block;
-         transform: scaleX(-1) translateX(-0.2rem);
-         color: red;
-      }
-      
-      .mainNav{
-         display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      
-      /* ----------------------------------------------Main Nav Category */
-    .mainNavcategory{
-      display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: white;
-    }
-.mainNavcategory h2{
-   font-size: 2.441rem;
-   letter-spacing: -0.12rem;
-   line-height: 1.2;
-   color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #272727;
 }
-.mainNavcategory h1{
-   font-size: 3.052rem;
+
+h1,
+p,
+a,
+li {
+  color: white;
 }
-    .mainNavcategory h1 span {
-      display: inline-block;
-      transform: scaleX(-1) translateX(-0.2rem);
-      color: red;
-   }
-   .mainNavcategory a{
-      text-decoration: none;
-   }
+p {
+  margin-bottom: 1.563rem;
+}
+li {
+  list-style-position: inside;
+}
+
+h1 {
+  font-size: 10rem;
+}
+
+body {
+  margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+  font-weight: 400;
+  line-height: 1.563;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  margin-top: 1em;
+  font-weight: bold;
+  color: white;
+}
+/* ----------------------------------------------Main Nav + span (red R) */
+
+.mainNav h1 span {
+  display: inline-block;
+  transform: scaleX(-1) translateX(-0.2rem);
+  color: red;
+}
+
+.mainNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ----------------------------------------------Main Nav Category */
+.mainNavcategory {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.mainNavcategory h2 {
+  font-size: 2.441rem;
+  letter-spacing: -0.12rem;
+  line-height: 1.2;
+  color: white;
+}
+.mainNavcategory h1 {
+  font-size: 3.052rem;
+}
+.mainNavcategory h1 span {
+  display: inline-block;
+  transform: scaleX(-1) translateX(-0.2rem);
+  color: red;
+}
+.mainNavcategory a {
+  text-decoration: none;
+}
 /* ----------------------------------------------Category List */
 
-    .categorylist{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1em;
-    }
+.categorylist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
 
-    .categorylist a{
-        text-decoration: none;
-        background-color:#949394;
-        padding: 2em;
-        color: white;
-    }
+.categorylist a {
+  text-decoration: none;
+  background-color: #949394;
+  padding: 2em;
+  color: white;
+}
 /* ----------------------------------------------Produkt List + img */
 
-    .produklist{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 2rem;
-      }
-      .produklist img{
-         max-width: 100%;
-         height: auto;
-         object-fit: cover;
-         cursor: pointer;
-      }
+.produklist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.produklist img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
 
-            /* ----------------------------------------------article produkt */
+/* ----------------------------------------------article produkt */
 
-            .produkt {
-               display: flex;
-               flex-direction: column;
-            }
-            
-            .produkt  > * {
-               margin: 0;
-               font-size: 1rem;
-            }
+.produkt {
+  display: flex;
+  flex-direction: column;
+}
 
-            .subtitle{
-               color: #777677;
-            }
+.produkt > * {
+  margin: 0;
+  font-size: 1rem;
+}
 
-            /* ----------------------------------------------article produkt h3 */
+.subtitle {
+  color: #777677;
+}
 
+/* ----------------------------------------------article produkt h3 */
 
-            h3{
-               letter-spacing: -0.02rem;
-               line-height: 2;
-            }
+h3 {
+  letter-spacing: -0.02rem;
+  line-height: 2;
+}
 
-                        /* -------------------------------------discount p + last child*/
+/* -------------------------------------discount p + last child*/
 
-            .discount{
-               display: flex;
-               justify-content: space-between;
-            }
+.discount {
+  display: flex;
+  justify-content: space-between;
+}
 
-            .discount p:last-child{
-               background-color: red;
-               padding: 0.2rem;
-            }
-            .discount > p{
-               margin-bottom: 0;
-            }
+.discount p:last-child {
+  background-color: red;
+  padding: 0.2rem;
+}
+.discount > p {
+  margin-bottom: 0;
+}
 
-                            /* -------------------------------Sold out*/
+/* -------------------------------Sold out*/
 
-         .soldout{
-            position: absolute;
-            padding: 1rem;
-            color: grey;
-            align-items: center;
-           
-         }
+.soldout {
+  position: absolute;
+  padding: 1rem;
+  color: grey;
+  align-items: center;
+}
 
-         .soldout p{
-            margin: 0 auto;
-         }
+.soldout p {
+  margin: 0 auto;
+}
 
-        
-                            /* ---------------------------Single Produkt*/
+/* ---------------------------Single Produkt*/
 
-         .produkt_main{
-            display: grid;
-         }
-         .produkt_main img{
-            width: 30%;
-         }
+.produkt_main {
+  display: grid;
+}
+.produkt_main img {
+  width: 30%;
+}
 
-        .produkt_info{
-color: white;
-padding: 1rem;
-         }
+.produkt_info {
+  color: white;
+  padding: 1rem;
+}
 
-
-         dd{
-            margin-left: 1rem;
-         }
-         dt{
-            font-weight: 700;
-         }
-         
+dd {
+  margin-left: 1rem;
+}
+dt {
+  font-weight: 700;
+}
