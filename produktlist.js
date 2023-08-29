@@ -24,7 +24,7 @@ copy.querySelector("h3").textContent = product.productdisplayname;
         copy.querySelector("article").classList.add("soldout");
     }
 
-  //apende
-target.appendChild(copy);
+   //apende
+target.appendChild(copy); 
 
 }
