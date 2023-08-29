@@ -5,7 +5,22 @@
   background-color: #272727;
 }
 
-h1,
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.produkliste{
+  display: grid;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  gap: 38px;
+   grid-template-columns: repeat(auto-fill, 200px); 
+}
+
+ h1,
 p,
 a,
 li {
@@ -37,7 +52,7 @@ h6 {
   margin-top: 1em;
   font-weight: bold;
   color: white;
-}
+} 
 /* ----------------------------------------------Main Nav + span (red R) */
 
 .mainNav h1 span {
@@ -50,7 +65,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} */
 
 /* ----------------------------------------------Main Nav Category */
 .mainNavcategory {
@@ -58,55 +73,56 @@ h6 {
   align-items: center;
   justify-content: space-between;
   color: white;
-}
+} 
 .mainNavcategory h2 {
   font-size: 2.441rem;
   letter-spacing: -0.12rem;
   line-height: 1.2;
   color: white;
-}
+} 
 .mainNavcategory h1 {
   font-size: 3.052rem;
-}
+} 
 .mainNavcategory h1 span {
   display: inline-block;
   transform: scaleX(-1) translateX(-0.2rem);
   color: red;
-}
+} 
 .mainNavcategory a {
   text-decoration: none;
-}
+} 
 /* ----------------------------------------------Category List */
 
-.categorylist {
+ .categorylist {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
-}
+} 
 
 .categorylist a {
   text-decoration: none;
   background-color: #949394;
   padding: 2em;
   color: white;
-}
+} 
 /* ----------------------------------------------Produkt List + img */
 
-.produklist {
+ .produklist {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
-}
+} 
 .produklist img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
   cursor: pointer;
 }
-
+ 
 /* ----------------------------------------------article produkt */
 
-.produkt {
+
+ .produkt {
   display: flex;
   flex-direction: column;
 }
@@ -118,18 +134,18 @@ h6 {
 
 .subtitle {
   color: #777677;
-}
+} */
 
 /* ----------------------------------------------article produkt h3 */
 
-h3 {
+ h3 {
   letter-spacing: -0.02rem;
   line-height: 2;
 }
-
+ 
 /* -------------------------------------discount p + last child*/
 
-.discount {
+ .discount {
   display: flex;
   justify-content: space-between;
 }
@@ -141,28 +157,30 @@ h3 {
 .discount > p {
   margin-bottom: 0;
 }
-
+ 
 /* -------------------------------Sold out*/
 
-.soldout {
+/* .soldout {
   position: absolute;
   padding: 1rem;
   color: grey;
   align-items: center;
-}
+} */
 
-.soldout p {
+/* .soldout p {
   margin: 0 auto;
 }
-
+  */
 /* ---------------------------Single Produkt*/
+
+/*Main*/
+ 
+
 
 .produkt_main {
   display: grid;
 }
-.produkt_main img {
-  width: 30%;
-}
+ 
 
 .produkt_info {
   color: white;
@@ -174,4 +192,6 @@ dd {
 }
 dt {
   font-weight: 700;
-}
+} 
+
+ 
