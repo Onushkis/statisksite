@@ -7,8 +7,10 @@ fetch("https://kea-alt-del.dk/t7/api/products")
 function showProducts(products) {
   //Looper og kalder showProduct enkel
   products.forEach(showProduct);
+  c
 }
 function showProduct(product) {
+  // console.log(product);
   //fange template
   const template = document.querySelector("#SmallProduktTemplate").content;
   const target = document.querySelector(".produkliste");
@@ -27,10 +29,12 @@ copy.querySelector("h3").textContent = product.productdisplayname;
 copy.querySelector("img").src=`http://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
 
-    if (product.soldout){
-        //produkt er usolgt
-        copy.querySelector("article").classList.add("soldout");
-    }
+   
+    /* if (product.soldout){
+      //produktet er udsolgt
+      copy.querySelector(".SmallProdukt").classList.add(soldOut);
+    } */
+    copy.querySelector(".read-more").setAttribute("href", `product.html?id=${product.id}`);
 
    //apende
 target.appendChild(copy); 
