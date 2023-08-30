@@ -2,6 +2,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
+// Loader
 if(!id){
     setTimeout(()=>{
 

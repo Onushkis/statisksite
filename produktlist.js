@@ -33,14 +33,37 @@ function showProduct(product) {
   //fange template
   const template = document.querySelector("#SmallProduktTemplate").content;
   const target = document.querySelector(".produkliste");
+
+  // Add class SOLDOUT
+
+//  document
+//   .querySelector(".SmallProdukt")
+//  .forEach((elm) => elm.classList.add("soldout"));  
+
+
+
+
+ 
   console.log(target);
   //lave en kopy
   const copy = template.cloneNode(true);
 
+
+  // const newPrice = product.discount  product.price
+
   // ændre inhold
 copy.querySelector("h3").textContent = product.productdisplayname;
  copy.querySelector("p.subtitle").textContent = product.subcategory;
+  //  copy.querySelector("h2.brand-name").textContent = product.brandname;
+
  copy.querySelector(".productprice").textContent = product.price;
+//  if we have a discount lets calculate the new price and display it , if we don't have a discount, remove the discount element (new price and discount )
+ if(product.discount) {
+ copy.querySelector(".discount .newPrice").textContent = calculateNewPrice(product.price, product.discount) + " New Price: DKK "
+ copy.querySelector(".discount .percentage").textContent =product.discount + '%'
+}else {
+  copy.querySelector(".discount").remove()
+}
 
 
 // Image
@@ -58,4 +81,13 @@ copy.querySelector("img").src=`http://kea-alt-del.dk/t7/images/webp/640/${produc
    //apende
 target.appendChild(copy); 
 
+}
+
+function calculateNewPrice (oldPrice, discount) {
+  if(!discount) return oldPrice
+  const newPrice = (oldPrice / 100) * discount
+
+  // you round it ceil: up,  or floor: down 
+  // return Math.ceil(newPrice)
+  return Math.round(newPrice,1)
 }

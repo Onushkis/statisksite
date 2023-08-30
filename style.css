@@ -93,18 +93,43 @@ h6 {
 } 
 /* ----------------------------------------------Category List */
 
- .categorylist {
+ .categorylist ol{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1em;
+  grid-template-columns: 1fr 1fr  ;
+  gap: 2em;
+  list-style-type: none;
+  width: 70%;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 4em;
+
+ 
+  
 } 
 
 .categorylist a {
   text-decoration: none;
   background-color: #949394;
-  padding: 0.5em;
+
+  padding: 2em;
   color: white;
-} 
+
+}    
+
+li{
+  display: grid;
+}
+
+/* ----------------------------------------------Produkt List + img */
+.produkt_main img{
+  width: 20%;
+  margin-top: 5em;
+  margin-left: 5em;
+}
+.produkt_info{
+  margin-left: 5em;
+}
+
 /* ----------------------------------------------Produkt List + img */
 
  .produklist {
@@ -160,17 +185,17 @@ h6 {
  
 /* -------------------------------Sold out*/
 
-/* .soldout {
+ .soldout {
   position: absolute;
   padding: 1rem;
   color: grey;
   align-items: center;
-} */
+} 
 
-/* .soldout p {
+.soldout p {
   margin: 0 auto;
 }
-  */
+  
 /* ---------------------------Single Produkt*/
 
 /*Main*/
