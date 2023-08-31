@@ -286,15 +286,5 @@ select::-ms-expand {
 
 
 
-a {
-  font-weight: bold;
-  color: var(--gray);
-  text-decoration: drop-shadow;
-  padding: .25em;
-  border-radius: .50em;
-  background: pink;
-}
-
-
 
 
