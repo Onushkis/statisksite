@@ -19,7 +19,7 @@ fetch("https://kea-alt-del.dk/t7/api/products/" + id)
 function showProduct(product) {
   console.log(product);
 
-  document.querySelector(".produkt_info h3").textContent =
+  document.querySelector(".produkt_info .model-name").textContent =
     product.productdisplayname;
 
   // I Dont Understand two h3 how to reach the second one h4, præcis den:h4
@@ -27,6 +27,12 @@ function showProduct(product) {
     product.basecolour;
 
   document.querySelector(".produkt_info h4").textContent = product.gender;
+  document.querySelector(".produkt_info .description").textContent = product.description 
+  document.querySelector(".produkt_info .materialcaredesc").textContent = product.materialcaredesc 
+
+
+
+
 
   document.querySelector(".produkt_info .brand").textContent =
     product.brandname;
